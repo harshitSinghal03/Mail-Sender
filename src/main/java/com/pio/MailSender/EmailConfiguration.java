@@ -26,7 +26,7 @@ public class EmailConfiguration {
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", emailProperties.isSmtpAuth());
         properties.put("mail.smtp.starttls.enable", emailProperties.isStartTls());
-        properties.put("mial.smtp.port", emailProperties.getSmtpPort());
+        properties.put("mail.smtp.port", emailProperties.getSmtpPort());
         properties.put("mail.smtp.host", emailProperties.getSmtpHost());
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
